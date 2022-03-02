@@ -1,7 +1,12 @@
 seeder:
   file: ./seeder/seeder.rb
-  disabled: true
+  disabled: false
+  
 parsers: 
-  - file: ./parseres/search.rb
+  - file: ./parsers/search.rb
     page_type: search
-    deisabled: true
+    deisabled: false
+
+  - file: ./parsers/product.rb
+    page_type: product
+    disabled: true
