@@ -9,4 +9,4 @@ parsers:
   
   - file: ./parsers/product.rb
     page_type: 'product'
-    disabled: true
+    disabled: false
