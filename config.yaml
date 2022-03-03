@@ -1,12 +1,18 @@
 seeder:
-  file: ./seeder/seeder.rb
-  disabled: false
+    file: ./seeder/seeder.rb
+    disabled: false
 
-parsers: 
-  - file: ./parsers/search.rb
-    page_type: 'search'
-    disabled: false
-  
-  - file: ./parsers/product.rb
-    page_type: 'product'
-    disabled: false
+parsers:
+    - file: ./parsers/search.rb
+      page_type: search
+      disabled: false
+
+    - file: ./parsers/product.rb
+      page_type: product
+      disabled: false
+
+exporters:
+    - exporter_name: products # Must be unique
+      exporter_type: json
+      collection: products
+      write_mode: pretty_array # can be 'line', 'pretty', 'pretty_array'

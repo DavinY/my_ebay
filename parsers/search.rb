@@ -5,10 +5,10 @@ products.each do |product|
     name = product.css('.s-item__title').text
     url = product.css('.s-item__link').attr('href').text
 
-    pages << {
+    pages << { 
         url: url,
         page_type: 'product',
-        vars: {
+        vars: { 
             'name' => name
         }
     }
